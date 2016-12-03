@@ -22,6 +22,7 @@ var initEvents = function() {
 	$(window).resize(function( event ) {
 		// resets window height value based on the resize event
 		getWinSize();
+		controlFade();
 	}),
 	$(window).scroll(function( event ) {
 		// adjust visibility after a scroll event
