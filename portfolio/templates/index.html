@@ -14,22 +14,22 @@
 			<div id="headshot">
 				<img src="../images/headshot-round.JPG" alt="My picture">
 			</div>
-			<h1 id="name">Eric Linden</h1>
+			<h1 class="white" id="name">Eric Linden</h1>
 			<div id="icons">
 				<a href="mailto:coralvanda@gmail.com">
-					<div class="icon-link">
+					<div class="icon-link white">
 						<i class="fa fa-envelope fa-2x"
 						aria-hidden="true"></i>
 					</div>
 				</a>
 				<a href="https://github.com/coralvanda">
-					<div class="icon-link">
+					<div class="icon-link white">
 						<i class="fa fa-github fa-2x"
 						aria-hidden="true"></i>
 					</div>
 				</a>
 				<a href="https://it.linkedin.com/in/coralvanda">
-					<div class="icon-link">
+					<div class="icon-link white">
 						<i class="fa fa-linkedin-square fa-2x"
 						aria-hidden="true"></i>
 					</div>
@@ -37,12 +37,12 @@
 			</div>
 		</header>
 		<div class="spacer">
-			<h1 class="center">Full-stack development solutions</h1>
+			<h1 class="center white fade">Full-stack development</h1>
 		</div>
 		<div id="projects">
-			<h1 class="center">Projects</h1>
+			<h1 class="white fade">Projects</h1>
 			<div class="project-box">
-				<section>
+				<section class="fade">
 					<h3>Neighborhood Map</h3>
 					<p>This project involved creating a single-page web
 					app that utilizes the Google Maps API and GeoNames
@@ -52,25 +52,27 @@
 					Maps Javascript API, and AJAX requests to
 					retrieve data from the	GeoNames database.</p>
 				</section>
-				<section>
-					<h3>Restaurant Menus</h3>
-					<p>This project involved the creation of a front end,
-					back end, database, and user-login system in order to
-					display menus at different restaurants, and allow for
-					adding and modifying entries.  It made use of Python,
-					Flask, SQLAlchemy, OAuth, HTML, CSS, Google login API
-					and Facebook login	API.</p>
+				<section class="fade">
+					<a href="http://restaurants.coralvanda.com">
+						<h3>Restaurant Menus</h3>
+						<p>This project involved the creation of a front end,
+						back end, database, and user-login system in order to
+						display menus at different restaurants, and allow for
+						adding and modifying entries.  It made use of Python,
+						Flask, SQLAlchemy, OAuth, HTML, CSS, Google login API
+						and Facebook login	API.</p>
+					</a>
 				</section>
 			</div>
 			<div class="project-box">
-				<section>
+				<section class="fade">
 					<h3>Multi-User Blog</h3>
 					<p>This project required the development of both
 					front- and back-end components using Python,
 					Javascript, HTML, CSS, jinja2, webapp2, Google App
 					Engine, and Google Datastore/NDB.</p>
 				</section>
-				<section>
+				<section class="fade">
 					<h3>Kitty Clicker</h3>
 					<p>A single-page site that shows a list of names, each
 					 of which will display an image of a cat that records
@@ -78,7 +80,11 @@
 					 project made use of Javascript, HTML, and CSS.</p>
 				</section>
 			</div>
+			<div class="spacer">
+			</div>
 		</div>
 	</div>
+	<script src="../static/lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../static/script.js"></script>
 </body>
 </html>
