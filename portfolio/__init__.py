@@ -8,7 +8,7 @@ def front_page():
 
 @app.route("/neighborhoodMap")
 def show_map():
-	return render_template("/neighborhood map/index.html")
+	return render_template("/neighborhoodmap/index.html")
 
 if __name__ == "__main__":
     app.run()
