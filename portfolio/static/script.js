@@ -6,7 +6,6 @@ var $sections = $('section');
 var	$sectionsViewport, $sectionsOutViewport;
 var	$win = $(window);
 var	winSize	= {};
-var	anim = false;
 
 var init = function() {
 	getWinSize();
@@ -16,15 +15,15 @@ var init = function() {
 	controlFade();
 };
 
-var setVisibilityLists	= function() {
+var setVisibilityLists = function() {
 	// builds lists of what is or isn't in view
 	$sectionsViewport 		= $sections.filter(':inviewport');
 	$sectionsOutViewport	= $sections.not( $sectionsViewport );
 };
 
-var getWinSize		= function() {
+var getWinSize = function() {
 	// stores the height of the window
-	winSize.height	= $win.height();
+	winSize.height = $win.height();
 };
 
 var initEvents = function() {
