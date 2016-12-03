@@ -35,18 +35,9 @@ var initEvents = function() {
 		setVisibilityLists();
 	}),
 	$(window).scroll(function( event ) {
-		// set a timeout to avoid calling the controlFade function
-		// on every scroll trigger
+		// adjust visibility after a scroll event
 		setVisibilityLists();
 		controlFade();
-		/*
-		if( anim ) return false;
-		anim = true;
-		setTimeout( function() {
-			controlFade();
-			anim = false;
-		}, 10 );
-		*/
 	});
 };
 
