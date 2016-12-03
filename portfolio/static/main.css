@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
 	html {
 		background-color: white;
-		background: url("../images/dock-small-cropped.jpg") no-repeat center center fixed;
+		background: url("../static/images/dock-small-cropped.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
 	    -moz-background-size: cover;
         -o-background-size: cover;
@@ -24,7 +24,7 @@
 
 @media only screen and (min-width: 601px) {
 	html {
-		background: url("../images/dock-large-cropped.jpg") no-repeat center center fixed;
+		background: url("../static/images/dock-large-cropped.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
