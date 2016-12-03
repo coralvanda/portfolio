@@ -1,3 +1,11 @@
 /portfolio/venv/
 
 /portfolio/images/cropped-shot-small.JPG
+/portfolio/images/dock-1080-wide.jpg
+/portfolio/images/dock-large.jpg
+/portfolio/images/dock-small.jpg
+/portfolio/images/dock.jpg
+
+/portfolio/neighborhood\ map/static/lib/jquery-3.1.1.js
+/portfolio/neighborhood\ map/static/lib/knockout.mapping-latest.js
+/portfolio/neighborhood\ map/static/private.js
