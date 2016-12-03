@@ -3,7 +3,6 @@
 // based on a tympanus.net article on lateral scrolling by Mary Lou
 
 var $sections = $('section');
-var	$sectionsViewport, $sectionsOutViewport;
 var	$win = $(window);
 var	winSize	= {};
 
@@ -23,11 +22,9 @@ var initEvents = function() {
 	$(window).resize(function( event ) {
 		// sets a new initial state based on the resize event
 		getWinSize();
-		//setVisibilityLists();
 	}),
 	$(window).scroll(function( event ) {
 		// adjust visibility after a scroll event
-		//setVisibilityLists();
 		controlFade();
 	});
 };
