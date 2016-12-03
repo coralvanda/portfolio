@@ -20,7 +20,7 @@ var getWinSize = function() {
 var initEvents = function() {
 	// manages resize and scroll events, updating app as needed
 	$(window).resize(function( event ) {
-		// sets a new initial state based on the resize event
+		// resets window height value based on the resize event
 		getWinSize();
 	}),
 	$(window).scroll(function( event ) {
@@ -31,14 +31,14 @@ var initEvents = function() {
 
 var controlFade = function() {
 	// adds or removes the "fade" class to control visibility as needed
-	var winscroll = $win.scrollTop();
-	//$sectionsOutViewport.each( function(i) {
+	var screenTop = $win.scrollTop();
 	$sections.each(function(i) {
 		var $item = $(this);
 		var itemTop	= $item.offset().top;
 		var itemBottom = $item.height() + itemTop;
-		if (( itemTop > winSize.height + winscroll )
-			|| ( itemBottom < $win.offset.top )) {
+		var screenBottom = winSize.height + screenTop;
+		if (( itemTop > screenBottom )
+			|| ( itemBottom < screenTop )) {
 			$item.removeClass("fade");
 		}
 		else {
