@@ -1,4 +1,44 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
+	html {
+		background-color: white;
+		background: url("../static/images/dock-mini-cropped.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;
+	}
+
+	.project-box {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.spacer {
+		height: 300px;
+		width: 100%;
+		display: flex;
+	}
+
+	#container {
+		min-width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	.center {
+		min-width: 100%;
+	}
+
+	section {
+		min-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
 	html {
 		background-color: white;
 		background: url("../static/images/dock-small-cropped.jpg") no-repeat center center fixed;
@@ -19,6 +59,22 @@
 		height: 300px;
 		width: 100%;
 		display: flex;
+	}
+
+	#container {
+		min-width: 400px;
+	}
+
+	header {
+		min-width: 350px;
+	}
+
+	.center {
+		min-width: 350px;
+	}
+
+	section {
+		min-width: 280px;
 	}
 }
 
@@ -42,17 +98,31 @@
 		width: 100%;
 		display: flex;
 	}
+
+	#container {
+		min-width: 400px;
+	}
+
+	header {
+		min-width: 350px;
+	}
+
+	.center {
+		min-width: 350px;
+	}
+
+	section {
+		min-width: 280px;
+	}
 }
 
 #container {
 	max-width: 900px;
-	min-width: 400px;
 	margin: auto;
 }
 
 header {
 	width: 100%;
-	min-width: 350px;
 	height: 50px;
 	background: rgba(0, 0, 0, 0.7);
 	display: flex;
@@ -90,7 +160,7 @@ img {
 
 .center {
 	margin: auto;
-	min-width: 350px;
+	text-align: center;
 }
 
 #projects {
@@ -100,7 +170,6 @@ img {
 section {
 	background: rgba(0, 0, 0, 0.7);
 	color: white;
-	min-width: 280px;
 	max-width: 600px;
 	margin: 1px 1px 1px 1px;
 	padding: 0 10px 0 10px;
