@@ -12,12 +12,12 @@ var model = {
 			"Russian Blue": 0
 		};
 		var sources = {
-			"Socks": "../images/Socks.jpg",
-			"Bashful": "../images/Bashful.jpg",
-			"Cuddles": "../images/Cuddles.jpg",
-			"Lemon": "../images/Lemon.jpg",
-			"Lieutenant Jeff": "../images/Lieutenant-Jeff.jpg",
-			"Russian Blue": "../images/Russian-Blue.jpg"
+			"Socks": "../static/images/Socks.jpg",
+			"Bashful": "../static/images/Bashful.jpg",
+			"Cuddles": "../static/images/Cuddles.jpg",
+			"Lemon": "../static/images/Lemon.jpg",
+			"Lieutenant Jeff": "../static/images/Lieutenant-Jeff.jpg",
+			"Russian Blue": "../static/images/Russian-Blue.jpg"
 		};
 		localStorage.setItem('names', JSON.stringify(names));
 		localStorage.setItem('clicks', JSON.stringify(clicks));
