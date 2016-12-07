@@ -6,5 +6,9 @@ app = Flask(__name__)
 def front_page():
     return render_template("index.html")
 
+@app.route("/kittyclicker")
+def kitty_clicker():
+	return render_template("catclicker.html")
+
 if __name__ == "__main__":
     app.run()

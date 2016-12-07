@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kitty clicker!</title>
+	<link rel="stylesheet" href="../static/kittyclicker/main.css">
+</head>
+<body>
+	<div id="navbar">
+		<h3>Here there be cats!</h3>
+		<p>Select a kitty:</p>
+		<ul id="catnav"></ul>
+		<div id='admin'>
+			<h4>Admin</h4>
+		</div>
+	</div>
+	<div class="whole">
+		<h2>Click on the kitty!</h2>
+		<div class="cat">
+			<div>
+				<img id="kittyPic" src="" alt="A cute kitty for you to click on">
+			</div>
+			<div>
+				<table>
+					<tr>
+						<td>Name:</td>
+						<td id="kittyName"></td>
+						<td></td>
+						<td>Clicks:</td>
+						<td id="kittyClicks"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id='admin_UI' style="display: none;">
+			<form id='admin_form'>
+				Name: <input type='text' name='catName' id='form_name'><br>
+				Image URL: <input type='url' name='catURL' id='form_url'><br>
+				Clicks: <input type='text' name='userModifiedClicks' id='form_clicks'>
+			</form>
+		</div>
+		<div id='admin_buttons' style="display: none;">
+			<div id='admin_submit'>
+				<h4>Submit</h4>
+			</div>
+			<div id='admin_cancel'>
+				<h4>Cancel</h4>
+			</div>
+		</div>
+	</div>
+	<script src="../static/kittyclicker/script.js"></script>
+</body>
+</html>

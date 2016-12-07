@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+}
+
+#navbar{
+	position: fixed;
+	max-width: 150px;
+	height: 100%;
+	background-color: #f1f1f1;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1;
+	border: 1px solid black;
+}
+
+li {
+	display: block;
+	color: #000;
+	padding: 8px 0 8px 16px;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+
+li:last-child{
+	border-bottom: none;
+}
+
+li:hover {
+	background-color: #555;
+	color: white;
+}
+
+li:active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+#admin {
+	text-align: center;
+	background-color: red;
+	max-width: 65px;
+	border-radius: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#admin:hover {
+	text-decoration: underline;
+}
+
+.whole{
+	margin-left: 151px;
+	height: 100%;
+	max-width: 650px;
+}
+
+.cat{
+	width: 100%;
+	position: relative;
+}
+
+img{
+	max-width: 100%;
+}
+
+table{
+	clear: both;
+	position: relative;
+}
+
+#admin_UI {
+	text-align: right;
+}
+
+#admin_buttons {
+	color: black;
+	border-radius: 10px;
+	max-width: 200px;
+	max-height: 40px;
+	margin-left: 475px;
+	text-align: center;
+}
+
+#admin_submit {
+	background-color: gray;
+	float: left;
+	margin-right: 10px;
+}
+
+#admin_cancel {
+	background-color: gray;
+	float: left;
+}
+
+#admin_submit:hover {
+	text-decoration: underline;
+}
+
+#admin_cancel:hover {
+	text-decoration: underline;
+}
