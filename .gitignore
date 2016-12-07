@@ -9,3 +9,5 @@
 /portfolio/neighborhood\ map/static/lib/jquery-3.1.1.js
 /portfolio/neighborhood\ map/static/lib/knockout.mapping-latest.js
 /portfolio/neighborhood\ map/static/private.js
+
+portfolio.wsgi
