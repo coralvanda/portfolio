@@ -1,3 +1,5 @@
+'use strict';
+
 var model = {
 	active_kitty: null,
 	init: function(){
@@ -144,10 +146,11 @@ var view_nav = {
 		var names, kitty, list_item;
 		this.catnav.innerHTML = '';
 		names = octopus.getNames();
-		for (i = 0; i < names.length; i++){
+		for (var i = 0; i < names.length; i++){
 			kitty = names[i];
 			list_item = document.createElement("LI");
 			list_item.id = 'nav' + kitty;
+			list_item.className = "button";
 			list_item.textContent = kitty;
 			list_item.addEventListener('click', (function(kittyCopy) {
 				return function() {
@@ -163,7 +166,8 @@ var view_nav = {
 
 var view_admin = {
 	init: function(){
-		var admin_button, admin_UI, admin_submit, name, URL, clicks;
+		var admin_button, admin_UI, admin_submit, admin_buttons,
+		    admin_cancel, name, URL, clicks;
 		admin_button 	= document.getElementById('admin');
 		admin_UI 		= document.getElementById('admin_UI');
 		admin_buttons	= document.getElementById('admin_buttons');
@@ -184,7 +188,7 @@ var view_admin = {
 			}
 		});
 		admin_submit.addEventListener('click', function() {
-			active_kitty = octopus.getActiveKitty();
+			var active_kitty = octopus.getActiveKitty();
 			name 	= document.getElementById('form_name').value;
 			URL 	= document.getElementById('form_url').value;
 			clicks 	= document.getElementById('form_clicks').value;
