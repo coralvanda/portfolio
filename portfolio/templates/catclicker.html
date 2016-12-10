@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Kitty clicker!</title>
 	<link rel="stylesheet" href="../static/kittyclicker/main.css">
 </head>
 <body>
 	<div class="container">
 		<div id="navbar">
-			<h3>Here there be cats!</h3>
-			<p>Select a kitty:</p>
+			<div>
+				<h3 class="center-text smaller-margins">
+					Here there be cats!
+				</h3>
+			</div>
+			<p class="smaller-margins">Select a kitty:</p>
 			<ul id="catnav"></ul>
-			<div id='admin'>
-				<h4>Admin</h4>
+			<div class="full-width center" id="button-div">
+				<div id='admin'>
+					<h4>Admin</h4>
+				</div>
+				<div id="portfolio-link">
+					<a href="http://coralvanda.com" class="no-line">
+						<div class="button">Return to portfolio</div>
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="whole">
-			<h2>Click on the kitty!</h2>
+			<div>
+				<h2 class="smaller-margins">Click on the kitty!</h2>
+			</div>
 			<div class="cat">
 				<div>
 					<img id="kittyPic" src="" alt="A cute kitty for you to click on">
@@ -41,10 +56,10 @@
 				</form>
 			</div>
 			<div id='admin_buttons' style="display: none;">
-				<div id='admin_submit'>
+				<div class="button" id='admin_submit'>
 					<h4>Submit</h4>
 				</div>
-				<div id='admin_cancel'>
+				<div class="button" id='admin_cancel'>
 					<h4>Cancel</h4>
 				</div>
 			</div>

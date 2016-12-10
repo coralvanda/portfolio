@@ -1,3 +1,58 @@
+@media only screen and (max-width: 699px) {
+
+	#container {
+		width: 100%;
+	}
+
+	#navbar {
+		width: 100%;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	li {
+		display: flex;
+		padding: 2px 2px 2px 2px;
+		border: 1px solid black;
+	}
+
+	#admin {
+		float: left;
+		height: 30px;
+	}
+
+	#portfolio-link {
+		float: left;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	#navbar {
+		max-width: 150px;
+	}
+
+	ul {
+		border: 1px solid black;
+	}
+
+	li {
+		border-bottom: 1px solid black;
+		padding: 8px 0 8px 16px;
+	}
+
+	li:last-child{
+		border-bottom: none;
+	}
+
+	#portfolio-link {
+		margin: auto;
+	}
+}
+
 html {
 	width: 100%;
 	height: 100%;
@@ -9,6 +64,10 @@ body {
 	height: 100%;
 }
 
+.smaller-margins {
+	margin: 10px 0 10px 0;
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -16,9 +75,16 @@ body {
 
 #navbar{
 	float: left;
-	max-width: 150px;
 	height: 100%;
 	background-color: #f1f1f1;
+}
+
+.center {
+	margin: auto;
+}
+
+.center-text {
+	text-align: center;
 }
 
 ul {
@@ -26,19 +92,12 @@ ul {
 	margin: 0;
 	padding: 0;
 	background-color: #f1f1f1;
-	border: 1px solid black;
 }
 
 li {
 	display: block;
 	color: #000;
-	padding: 8px 0 8px 16px;
 	text-decoration: none;
-	border-bottom: 1px solid black;
-}
-
-li:last-child{
-	border-bottom: none;
 }
 
 li:hover {
@@ -54,10 +113,13 @@ li:active {
 #admin {
 	text-align: center;
 	background-color: red;
+	background: linear-gradient(white, red);
 	max-width: 65px;
 	border-radius: 10px;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 0 3px 0 3px;
+	border: 1px solid black;
 }
 
 #admin:hover {
@@ -72,16 +134,19 @@ li:active {
 
 .cat{
 	width: 100%;
-	position: relative;
 }
 
-img{
-	max-width: 100%;
+img {
+	width: 100%;
 }
 
 table{
 	clear: both;
 	position: relative;
+}
+
+h4 {
+	margin: 5px 0 5px 0;
 }
 
 #admin_UI {
@@ -114,4 +179,25 @@ table{
 
 #admin_cancel:hover {
 	text-decoration: underline;
+}
+
+.button {
+	background: linear-gradient(white, gray);
+	padding: 2px;
+	margin: 0 2px 0 2px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.no-line {
+	text-decoration: none;
+	color: black;
+}
+
+.full-width {
+	width: 100%;
+}
+
+#button-div {
+	height: 35px;
 }
