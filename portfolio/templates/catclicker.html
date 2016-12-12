@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="container">
-		<div id="navbar">
+		<nav id="navbar">
 			<div>
 				<h3 class="center-text smaller-margins">
 					Here there be cats!
@@ -24,13 +24,13 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		<div class="whole">
+		</nav>
+		<main class="whole">
 			<div>
 				<h2 class="smaller-margins">Click on the kitty!</h2>
 			</div>
 			<div class="full-width">
-				<div>
+				<div id="picture-div">
 					<img id="kittyPic" src="" alt="A cute kitty for you to click on">
 				</div>
 				<div>
@@ -45,7 +45,6 @@
 					</table>
 				</div>
 			</div>
-
 			<div id='admin_UI' style="display: none;">
 				<form id='admin_form'>
 					Name: <input type='text' name='catName' id='form_name'><br>
@@ -61,7 +60,7 @@
 					<h4 class="smaller-margins">Cancel</h4>
 				</div>
 			</div>
-		</div>
+		</main>
 	</div>
 	<script src="../static/kittyclicker/script.js"></script>
 </body>
