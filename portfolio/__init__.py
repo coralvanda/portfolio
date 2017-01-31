@@ -15,4 +15,5 @@ def kitty_clicker():
 	return render_template("catclicker.html")
 
 if __name__ == "__main__":
+	app.secret_key = "PUT SECRET KEY HERE"
     app.run()
