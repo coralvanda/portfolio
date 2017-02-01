@@ -221,6 +221,8 @@ a:visited {
 
 .tech-icons {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	height: 50px;
 }
 
