@@ -59,11 +59,13 @@ $('#showBio').click(function () {
 		$('.spacer').hide();
 		$('#projects').hide();
 		$('#bio').show();
+		$('footer').width(800);
 		bioHidden = false;
 	} else {
 		$('.spacer').show();
 		$('#projects').show();
 		$('#bio').hide();
+		$('footer').width(670);
 		bioHidden = true;
 	}
 });
