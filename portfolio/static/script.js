@@ -5,11 +5,13 @@
 var $sections = $('section');
 var	$win = $(window);
 var	winSize	= {};
+var bioHidden = true;
 
 var init = function() {
 	getWinSize();
 	initEvents();
 	controlFade();
+	$('#bio').hide();
 };
 
 var getWinSize = function() {
@@ -50,6 +52,20 @@ var controlFade = function() {
 
 $('#goToTop').click(function () {
 	$('html, body').animate({scrollTop: 0});
+});
+
+$('#showBio').click(function () {
+	if(bioHidden === true) {
+		$('.spacer').hide();
+		$('#projects').hide();
+		$('#bio').show();
+		bioHidden = false;
+	} else {
+		$('.spacer').show();
+		$('#projects').show();
+		$('#bio').hide();
+		bioHidden = true;
+	}
 });
 
 init();
