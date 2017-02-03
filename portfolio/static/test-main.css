@@ -182,6 +182,14 @@ img {
 	text-align: center;
 }
 
+.right {
+	margin-left: auto;
+}
+
+.col-100 {
+	width: 100%;
+}
+
 #projects {
 	margin: auto;
 	display: flex;
@@ -189,8 +197,8 @@ img {
 	justify-content: center;
 }
 
-.col-100 {
-	width: 100%;
+.project-link {
+	display: flex;
 }
 
 .shaded {
