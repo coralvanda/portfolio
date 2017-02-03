@@ -123,13 +123,26 @@
 		margin: 10px 5px 10px 5px;
 	}
 
+	.project {
+		width: 650px;
+	}
+
+	#bio {
+		display: flex;
+	}
+
+	#bio-pic {
+		min-width: 150px;
+		min-height: 150px;
+	}
+
 	footer {
 		min-width: 350px;
 	}
 }
 
 #container {
-	max-width: 900px;
+	max-width: 800px;
 	margin: auto;
 }
 
@@ -224,21 +237,18 @@ a:visited {
 .tech-icon {
 	margin: 0 1px 0 1px;
 	height: 50px;
-}
-
-#bio {
-	display: flex;
-	flex-wrap: wrap;
+	width: 50px;
 }
 
 #bio-pic {
 	float: left;
 	max-width: 150px;
-	max-height: 150px;
+	max-height: 100%;
+	margin: 5px 5px 5px 5px;
 }
 
 #bio-text {
-	float: none;
+	margin: 5px 0 0 5px;
 }
 
 footer {
@@ -246,6 +256,7 @@ footer {
 	height: 50px;
 	background: rgba(0, 0, 0, 0.7);
 	display: flex;
+	justify-content: space-around;
 	opacity: 0;
 	animation: fadein 3s 0s 1;
 	animation-fill-mode: forwards;
