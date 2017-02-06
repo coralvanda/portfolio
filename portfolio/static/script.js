@@ -55,17 +55,18 @@ $('#goToTop').click(function () {
 });
 
 $('#showBio').click(function () {
+	// hides the projects while showing the bio or vice versa
 	if(bioHidden === true) {
 		$('.spacer').hide();
 		$('#projects').hide();
 		$('#bio').show();
-		$('footer').width(800);
+		$('#footer-content').width('100%');
 		bioHidden = false;
 	} else {
 		$('.spacer').show();
 		$('#projects').show();
 		$('#bio').hide();
-		$('footer').width(670);
+		$('#footer-content').width(670);
 		bioHidden = true;
 	}
 });
