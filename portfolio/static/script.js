@@ -54,7 +54,7 @@ $('#goToTop').click(function () {
 	$('html, body').animate({scrollTop: 0});
 });
 
-$('#showBio').click(function () {
+var showOrHideBio = function() {
 	// hides the projects while showing the bio or vice versa
 	if(bioHidden === true) {
 		$('.spacer').hide();
@@ -69,6 +69,10 @@ $('#showBio').click(function () {
 		$('#footer-content').width(670);
 		bioHidden = true;
 	}
+};
+
+$('#showBio').click(function () {
+	showOrHideBio();
 });
 
 init();
