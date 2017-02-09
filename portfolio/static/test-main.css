@@ -159,11 +159,15 @@ a:visited {
 }
 
 h1, h3, h4 {
-	font-family: 'Roboto', sans-serif, 'Courier New', Arial;
+	font-family: 'Josefin Slab', serif, "Times New Roman", Times, serif;
 }
 
 p {
-	font-family: 'Inconsolata', monospace, Arial;
+    font-family: 'Crimson Text', serif, Georgia, serif;
+}
+
+.monospace {
+	font-family: 'Inconsolata', monospace, "Courier New", Courier, monospace;
 }
 
 footer {
