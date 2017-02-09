@@ -273,3 +273,7 @@ footer {
 	justify-content: space-around;
 	opacity: 0;
 }
+
+#showBio, #goToTop {
+	cursor: pointer;
+}
