@@ -274,6 +274,6 @@ footer {
 	opacity: 0;
 }
 
-#showBio, #goToTop {
+#showBio, #goToTop, #bio-icon{
 	cursor: pointer;
 }
