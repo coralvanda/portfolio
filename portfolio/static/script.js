@@ -75,4 +75,8 @@ $('#showBio').click(function () {
 	showOrHideBio();
 });
 
+$('#bio-icon').click(function() {
+	showOrHideBio();
+});
+
 init();
