@@ -156,6 +156,10 @@ footer {
 	display: flex;
 }
 
+.project {
+	width: 100%;
+}
+
 .shaded {
 	background: rgba(0, 0, 0, 0.7);
 	color: white;
