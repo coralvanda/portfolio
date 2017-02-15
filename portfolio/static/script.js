@@ -58,12 +58,14 @@ var showOrHideBio = function() {
 	// hides the projects while showing the bio or vice versa
 	if(bioHidden === true) {
 		$('#header-content').width('100%');
+		$('#project-bio-box-inner').width('100%')
 		$('#projects').hide();
 		$('#bio').show();
 		$('#footer-content').width('100%');
 		bioHidden = false;
 	} else {
 		$('#header-content').width(650);
+		$('#project-bio-box-inner').width(650)
 		$('#projects').show();
 		$('#bio').hide();
 		$('#footer-content').width(650);
