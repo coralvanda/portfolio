@@ -50,20 +50,20 @@ var controlFade = function() {
 	});
 };
 
-$('#goToTop').click(function () {
+$('#go-to-top').click(function () {
 	$('html, body').animate({scrollTop: 0});
 });
 
 var showOrHideBio = function() {
 	// hides the projects while showing the bio or vice versa
 	if(bioHidden === true) {
-		$('.spacer').hide();
+		$('header').width('100%');
 		$('#projects').hide();
 		$('#bio').show();
 		$('#footer-content').width('100%');
 		bioHidden = false;
 	} else {
-		$('.spacer').show();
+		$('header').width(650);
 		$('#projects').show();
 		$('#bio').hide();
 		$('#footer-content').width(670);
