@@ -123,6 +123,11 @@ footer {
 	display: flex;
 }
 
+#project-bio-box {
+	width: 100%;
+	justify-content: center;
+}
+
 #projects {
 	margin: auto;
 	display: flex;
