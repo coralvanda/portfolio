@@ -75,7 +75,11 @@ $('#show-bio').click(function () {
 	showOrHideBio();
 });
 
-$('#bio-icon').click(function() {
+$('#show-bio-button').click(function() {
+	showOrHideBio();
+});
+
+$('#show-projects-button').click(function() {
 	showOrHideBio();
 });
 
