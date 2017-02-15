@@ -19,12 +19,6 @@
 		justify-content: center;
 	}
 
-	.spacer {
-		height: 300px;
-		width: 100%;
-		display: flex;
-	}
-
 	.center {
 		min-width: 100%;
 	}
@@ -60,12 +54,6 @@
 		justify-content: center;
 	}
 
-	.spacer {
-		height: 300px;
-		width: 100%;
-		display: flex;
-	}
-
 	.center {
 		min-width: 350px;
 	}
@@ -98,12 +86,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-	}
-
-	.spacer {
-		height: 500px;
-		width: 100%;
-		display: flex;
 	}
 
 	.center {
