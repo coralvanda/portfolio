@@ -71,7 +71,7 @@ var showOrHideBio = function() {
 	}
 };
 
-$('#showBio').click(function () {
+$('#show-bio').click(function () {
 	showOrHideBio();
 });
 
