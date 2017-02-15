@@ -43,11 +43,6 @@ footer {
 	margin: 10px 5px 10px 5px;
 }
 
-.center {
-	margin: auto;
-	text-align: center;
-}
-
 .right {
 	margin-left: auto;
 }
@@ -169,10 +164,6 @@ footer {
 		background-size: cover;
 	}
 
-	.center {
-		min-width: 100%;
-	}
-
 	#container {
 		min-width: 100%;
 	}
@@ -191,10 +182,6 @@ footer {
 	    -moz-background-size: cover;
         -o-background-size: cover;
 		background-size: cover;
-	}
-
-	.center {
-		min-width: 350px;
 	}
 
 	#container {
@@ -216,10 +203,6 @@ footer {
 		background-size: cover;
 	}
 
-	.center {
-		min-width: 350px;
-	}
-
 	.project {
 		width: 650px;
 	}
@@ -230,7 +213,7 @@ footer {
 
 	#name {
 		font-size: 2em;
-		margin: 10px 5px 10px 5px;
+		margin: 10px 0 10px 0;
 	}
 
 	#bio-pic {
