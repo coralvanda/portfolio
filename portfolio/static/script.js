@@ -66,7 +66,7 @@ var showOrHideBio = function() {
 		$('#header-content').width(650);
 		$('#projects').show();
 		$('#bio').hide();
-		$('#footer-content').width(670);
+		$('#footer-content').width(650);
 		bioHidden = true;
 	}
 };
