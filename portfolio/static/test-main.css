@@ -237,6 +237,6 @@ footer {
 	opacity: 0;
 }
 
-#showBio, #goToTop, #bio-icon{
+#show-bio, #go-to-top, #show-bio-button, #show-projects-button {
 	cursor: pointer;
 }
