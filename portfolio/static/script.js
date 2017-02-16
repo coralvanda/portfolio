@@ -12,6 +12,7 @@ var $bioText = $('#show-bio');
 var $projects = $('#projects');
 var $footerContent = $('#footer-content');
 var $headerContent = $('#header-content');
+var $showBioButton = $('#show-bio-button');
 var $projectBioBoxInner = $('#project-bio-box-inner');
 
 var init = function() {
@@ -63,24 +64,38 @@ $('#go-to-top').click(function () {
 
 var showOrHideBio = function() {
 	// hides the projects while showing the bio or vice versa
-	if(bioHidden === true) {
+	if (bioHidden === true) {
 		$headerContent.width('100%');
 		$projectBioBoxInner.width('100%')
 		$spacer.hide();
 		$projects.hide();
 		$bio.show();
 		$footerContent.width('100%');
+		$showBioButton.hide();
 		$bioText.text('Projects');
 		bioHidden = false;
-	} else {
+	}
+	else {
 		$headerContent.width(650);
 		$projectBioBoxInner.width(650)
 		$spacer.show();
 		$projects.show();
 		$bio.hide();
 		$footerContent.width(650);
+		$showBioButton.show();
 		$bioText.text('Bio');
+		$('html, body').animate({scrollTop: $projects.offset().top});
 		bioHidden = true;
+	}
+};
+
+var showProjects = function() {
+	// scrolls down to projects, or hides the bio and returns to projects
+	if (bioHidden === true) {
+		$('html, body').animate({scrollTop: $projects.offset().top});
+	}
+	else {
+		showOrHideBio();
 	}
 };
 
@@ -93,7 +108,7 @@ $('#show-bio-button').click(function() {
 });
 
 $('#show-projects-button').click(function() {
-	showOrHideBio();
+	showProjects();
 });
 
 init();
