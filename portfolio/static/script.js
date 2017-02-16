@@ -2,11 +2,17 @@
 
 // based on a tympanus.net article on lateral scrolling by Mary Lou
 
-var $sections = $('section');
 var	$win = $(window);
 var	winSize	= {};
 var bioHidden = true;
-var bioTextElem = $('#show-bio');
+var $bio = $('#bio');
+var $spacer = $('#spacer');
+var $sections = $('section');
+var $bioText = $('#show-bio');
+var $projects = $('#projects');
+var $footerContent = $('#footer-content');
+var $headerContent = $('#header-content');
+var $projectBioBoxInner = $('#project-bio-box-inner');
 
 var init = function() {
 	getWinSize();
@@ -58,20 +64,22 @@ $('#go-to-top').click(function () {
 var showOrHideBio = function() {
 	// hides the projects while showing the bio or vice versa
 	if(bioHidden === true) {
-		$('#header-content').width('100%');
-		$('#project-bio-box-inner').width('100%')
-		$('#projects').hide();
-		$('#bio').show();
-		$('#footer-content').width('100%');
-		bioTextElem.text('Projects');
+		$headerContent.width('100%');
+		$projectBioBoxInner.width('100%')
+		$spacer.hide();
+		$projects.hide();
+		$bio.show();
+		$footerContent.width('100%');
+		$bioText.text('Projects');
 		bioHidden = false;
 	} else {
-		$('#header-content').width(650);
-		$('#project-bio-box-inner').width(650)
-		$('#projects').show();
-		$('#bio').hide();
-		$('#footer-content').width(650);
-		bioTextElem.text('Bio');
+		$headerContent.width(650);
+		$projectBioBoxInner.width(650)
+		$spacer.show();
+		$projects.show();
+		$bio.hide();
+		$footerContent.width(650);
+		$bioText.text('Bio');
 		bioHidden = true;
 	}
 };
