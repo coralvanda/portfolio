@@ -159,6 +159,12 @@ footer {
 	cursor: pointer;
 }
 
+@media only screen and (max-width: 339px) {
+	#header-content {
+		height: 100px;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	html {
 		background-color: white;
@@ -174,7 +180,7 @@ footer {
 	}
 
 	#name {
-		font-size: 1.5em;
+		margin-top: 10px;
 		align-self: center;
 	}
 
@@ -198,8 +204,7 @@ footer {
 	}
 
 	#name {
-		font-size: 2em;
-		margin: 10px 5px 10px 5px;
+		margin: 10px 5px 10px 0;
 	}
 
 	#spacer {
