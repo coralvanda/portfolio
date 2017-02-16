@@ -6,6 +6,7 @@ var $sections = $('section');
 var	$win = $(window);
 var	winSize	= {};
 var bioHidden = true;
+var bioTextElem = $('#show-bio');
 
 var init = function() {
 	getWinSize();
@@ -62,6 +63,7 @@ var showOrHideBio = function() {
 		$('#projects').hide();
 		$('#bio').show();
 		$('#footer-content').width('100%');
+		bioTextElem.text('Projects');
 		bioHidden = false;
 	} else {
 		$('#header-content').width(650);
@@ -69,6 +71,7 @@ var showOrHideBio = function() {
 		$('#projects').show();
 		$('#bio').hide();
 		$('#footer-content').width(650);
+		bioTextElem.text('Bio');
 		bioHidden = true;
 	}
 };
