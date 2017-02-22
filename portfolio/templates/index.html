@@ -6,340 +6,418 @@
 	<title>Eric Linden</title>
 	<link rel="stylesheet"
 	href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../static/main.css">
+	<link rel="stylesheet" href="../static/test-main.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata|Playfair+Display:700" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
-		<header>
-			<div id="headshot">
-				<img src="../static/images/headshot-round.png"
-				alt="My picture">
-			</div>
-			<h1 class="white" id="name">Eric Linden</h1>
-			<div id="icons">
-				<a href="mailto:coralvanda@gmail.com">
-					<div class="icon-link white">
-						<i class="fa fa-envelope fa-2x"
-						aria-hidden="true"></i>
-					</div>
+		<header class="flex">
+			<div id="header-content" class="shaded fade flex">
+				<a href="http://coralvanda.com">
+					<h1 class="white" id="name">Eric Linden</h1>
 				</a>
-				<a href="https://github.com/coralvanda">
-					<div class="icon-link white">
-						<i class="fa fa-github fa-2x"
-						aria-hidden="true"></i>
-					</div>
-				</a>
-				<a href="https://it.linkedin.com/in/coralvanda">
-					<div class="icon-link white">
-						<i class="fa fa-linkedin-square fa-2x"
-						aria-hidden="true"></i>
-					</div>
-				</a>
-				<a href="http://stackoverflow.com/users/5094044/coralvanda">
-					<div class="icon-link white">
-						<i class="fa fa-stack-overflow fa-2x"
-						aria-hidden="true"></i>
-					</div>
-				</a>
+				<div id="icons">
+					<a href="mailto:coralvanda@gmail.com">
+						<div class="icon-link white">
+							<i class="fa fa-envelope fa-2x"
+							aria-hidden="true"></i>
+						</div>
+					</a>
+					<a href="https://github.com/coralvanda">
+						<div class="icon-link white">
+							<i class="fa fa-github fa-2x"
+							aria-hidden="true"></i>
+						</div>
+					</a>
+					<a href="https://it.linkedin.com/in/coralvanda">
+						<div class="icon-link white">
+							<i class="fa fa-linkedin-square fa-2x"
+							aria-hidden="true"></i>
+						</div>
+					</a>
+					<a href="http://stackoverflow.com/users/5094044/coralvanda">
+						<div class="icon-link white">
+							<i class="fa fa-stack-overflow fa-2x"
+							aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
 			</div>
 		</header>
-		<div class="spacer">
-			<h1 class="center white fade">Turning ideas into websites</h1>
+		<div id="project-bio-box" class="flex">
+			<div id="project-bio-box-inner" class="project shaded fade flex">
+				<h1 class="white fade" id="show-projects-button">Projects</h1>
+				<h1 class="white fade right" id="show-bio-button">Bio</h1>
+			</div>
+		</div>
+		<div id="spacer">
 		</div>
 		<div id="projects">
-			<h1 class="white fade">Projects</h1>
-			<div class="project-box">
-				<section class="fade">
-					<a href="http://map.coralvanda.com/">
+			<section class="project shaded fade">
+				<a href="http://learning-django.coralvanda.com/polls/">
+					<div class="flex">
+						<h3>Django Polls App</h3>
+						<h4 class="right">View project</h4>
+					</div>
+				</a>
+				<p>This project followed the official Django tutorial
+				to create a polls application.  Additional features
+				were implemented through a process of test-driven
+				development.</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.python.org/">
+						<img src="../static/images/python-icon.png"
+						alt="Python Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.djangoproject.com//">
+						<img src="../static/images/django-icon.png"
+						alt="Django Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.postgresql.org//">
+						<img src="../static/images/postgresql-icon.png"
+						 alt="PostgreSQL icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/TR/html5/">
+						<img src="../static/images/html-icon.png"
+						alt="HTML Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/Style/CSS/Overview.en.html">
+						<img src="../static/images/CSS3-icon.png"
+						alt="CSS Icon">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="project shaded fade">
+				<a href="http://map.coralvanda.com/">
+					<div class="flex">
 						<h3>Neighborhood Map</h3>
-						<p>This project involved creating a single-page
-						 web app that utilizes the Google Maps API and
-						 GeoNames data to display interactive points of
-						 interest and related information on a Google
-						 Map.</p>
-					</a>
-					<p>Technologies used:</p>
-					<div class="tech-icons">
-						<div class="tech-icon">
-							<a href="https://www.javascript.com/">
-							<img src="../static/images/js-icon.png"
-							alt="Javascript Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://jquery.com/">
-							<img src="../static/images/jquery-icon.png"
-							alt="jQuery Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="http://knockoutjs.com/">
-							<img src="../static/images/knockout-icon.png"
-							alt="Knockout Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/TR/html5/">
-							<img src="../static/images/html-icon.png"
-							alt="HTML Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/Style/CSS/Overview.en.html">
-							<img src="../static/images/CSS3-icon.png"
-							alt="CSS Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://developers.google.com/+/web/api/rest/">
-							<img src="../static/images/google-icon.png"
-							alt="Google Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="http://www.geonames.org/">
-							<img src="../static/images/geonames-icon.png"
-							alt="Geonames Icon">
-							</a>
-						</div>
+						<h4 class="right">View project</h4>
 					</div>
-				</section>
-				<section class="fade">
-					<a href="http://restaurants.coralvanda.com">
+				</a>
+				<p>This project involved creating a single-page
+				 web app that utilizes the Google Maps API and
+				 GeoNames data to display interactive points of
+				 interest and related information on a Google
+				 Map.</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.javascript.com/">
+						<img src="../static/images/js-icon.png"
+						alt="Javascript Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://jquery.com/">
+						<img src="../static/images/jquery-icon.png"
+						alt="jQuery Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="http://knockoutjs.com/">
+						<img src="../static/images/knockout-icon.png"
+						alt="Knockout Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/TR/html5/">
+						<img src="../static/images/html-icon.png"
+						alt="HTML Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/Style/CSS/Overview.en.html">
+						<img src="../static/images/CSS3-icon.png"
+						alt="CSS Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://developers.google.com/+/web/api/rest/">
+						<img src="../static/images/google-icon.png"
+						alt="Google Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="http://www.geonames.org/">
+						<img src="../static/images/geonames-icon.png"
+						alt="Geonames Icon">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="project shaded fade">
+				<a href="http://restaurants.coralvanda.com">
+					<div class="flex">
 						<h3>Restaurant Menus</h3>
-						<p>This project involved the creation of a front
-						end, back end, database, and user-login system in
-						order to display menus at different restaurants,
-						and allow for adding and modifying entries.</p>
-					</a>
-					<p>Technologies used:</p>
-					<div class="tech-icons">
-						<div class="tech-icon">
-							<a href="https://www.python.org/">
-							<img src="../static/images/python-icon.png"
-							alt="Python Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="http://flask.pocoo.org/">
-							<img src="../static/images/flask-icon.png"
-							alt="Flask Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="http://www.sqlalchemy.org/">
-							<img src="../static/images/sqla-icon.png"
-							alt="SQLAlchemy Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://oauth.net/2/">
-							<img src="../static/images/oauth-icon.png"
-							alt="Oauth2 Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/TR/html5/">
-							<img src="../static/images/html-icon.png"
-							alt="HTML Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/Style/CSS/Overview.en.html">
-							<img src="../static/images/CSS3-icon.png"
-							alt="CSS Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://developers.google.com/identity/">
-							<img src="../static/images/google-icon.png"
-							alt="Google Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://developers.facebook.com/docs/facebook-login/">
-							<img src="../static/images/facebook-icon.png"
-							alt="Facebook Icon">
-							</a>
-						</div>
+						<h4 class="right">View project</h4>
 					</div>
-				</section>
-			</div>
-			<div class="project-box">
-				<section class="fade">
-					<a href="https://engineapp-backend-intro.appspot.com/">
+				</a>
+				<p>This project involved the creation of a front
+				end, back end, database, and user-login system in
+				order to display menus at different restaurants,
+				and allow for adding and modifying entries.</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.python.org/">
+						<img src="../static/images/python-icon.png"
+						alt="Python Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="http://flask.pocoo.org/">
+						<img src="../static/images/flask-icon.png"
+						alt="Flask Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="http://www.sqlalchemy.org/">
+						<img src="../static/images/sqla-icon.png"
+						alt="SQLAlchemy Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://oauth.net/2/">
+						<img src="../static/images/oauth-icon.png"
+						alt="Oauth2 Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/TR/html5/">
+						<img src="../static/images/html-icon.png"
+						alt="HTML Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/Style/CSS/Overview.en.html">
+						<img src="../static/images/CSS3-icon.png"
+						alt="CSS Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://developers.google.com/identity/">
+						<img src="../static/images/google-icon.png"
+						alt="Google Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://developers.facebook.com/docs/facebook-login/">
+						<img src="../static/images/facebook-icon.png"
+						alt="Facebook Icon">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="project shaded fade">
+				<a href="https://engineapp-backend-intro.appspot.com/">
+					<div class="flex">
 						<h3>Multi-User Blog</h3>
-						<p>This project required the development of both
-						front- and back-end components for a page that allows users to register, create and edit posts, and interact with other users' posts.</p>
-					</a>
-					<p>Technologies used:</p>
-					<div class="tech-icons">
-						<div class="tech-icon">
-							<a href="https://www.python.org/">
-							<img src="../static/images/python-icon.png"
-							alt="Python Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.javascript.com/">
-							<img src="../static/images/js-icon.png"
-							alt="Javascript Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="http://jinja.pocoo.org/">
-							<img src="../static/images/jinja-icon.png"
-							alt="Jinja Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/TR/html5/">
-							<img src="../static/images/html-icon.png"
-							alt="HTML Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/Style/CSS/Overview.en.html">
-							<img src="../static/images/CSS3-icon.png"
-							alt="CSS Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://cloud.google.com/appengine/">
-							<img src="../static/images/google-app-engine-icon.png"
-							alt="Google App Engine Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://cloud.google.com/appengine/docs/python/ndb/">
-							<img src="../static/images/google-ndb-icon.png"
-							alt="Google NDB/Datastore Icon">
-							</a>
-						</div>
+						<h4 class="right">View project</h4>
 					</div>
-				</section>
-				<section class="fade">
-					<a href="http://coralvanda.com/kittyclicker">
+				</a>
+				<p>This project required the development of both
+				front- and back-end components for a page that allows users
+				to register, create and edit posts, and interact with other
+				users' posts.</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.python.org/">
+						<img src="../static/images/python-icon.png"
+						alt="Python Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.javascript.com/">
+						<img src="../static/images/js-icon.png"
+						alt="Javascript Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="http://jinja.pocoo.org/">
+						<img src="../static/images/jinja-icon.png"
+						alt="Jinja Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/TR/html5/">
+						<img src="../static/images/html-icon.png"
+						alt="HTML Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/Style/CSS/Overview.en.html">
+						<img src="../static/images/CSS3-icon.png"
+						alt="CSS Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://cloud.google.com/appengine/">
+						<img src="../static/images/google-app-engine-icon.png"
+						alt="Google App Engine Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://cloud.google.com/appengine/docs/python/ndb/">
+						<img src="../static/images/google-ndb-icon.png"
+						alt="Google NDB/Datastore Icon">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="project shaded fade">
+				<a href="http://coralvanda.com/kittyclicker">
+					<div class="flex">
 						<h3>Kitty Clicker</h3>
-						<p>A single-page site that shows a list of names,
-						each of which will display an image of a cat that
-						records the number of times a user clicks on it.
-						</p>
-					</a>
-					<p>Technologies used:</p>
-					<div class="tech-icons">
-						<div class="tech-icon">
-							<a href="https://www.javascript.com/">
-							<img src="../static/images/js-icon.png"
-							alt="Javascript Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/TR/html5/">
-							<img src="../static/images/html-icon.png"
-							alt="HTML Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/Style/CSS/Overview.en.html">
-							<img src="../static/images/CSS3-icon.png"
-							alt="CSS Icon">
-							</a>
-						</div>
-				</section>
-			</div>
-			<div class="project-box">
-				<section class="fade">
-					<a href="https://conference-center-project.appspot.com">
+						<h4 class="right">View project</h4>
+					</div>
+				</a>
+				<p>A single-page site that shows a list of names,
+				each of which will display an image of a cat that
+				records the number of times a user clicks on it.
+				</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.javascript.com/">
+						<img src="../static/images/js-icon.png"
+						alt="Javascript Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/TR/html5/">
+						<img src="../static/images/html-icon.png"
+						alt="HTML Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/Style/CSS/Overview.en.html">
+						<img src="../static/images/CSS3-icon.png"
+						alt="CSS Icon">
+						</a>
+					</div>
+			</section>
+			<section class="project shaded fade">
+				<a href="https://conference-center-project.appspot.com">
+					<div class="flex">
 						<h3>Conference Central</h3>
-						<p>This project required the construction of a
-						back-end API to enable functionality for
-						a pre-built front-end.  The app allows users
-						to register, log in, manage, and interact with
-						other users' conferences.</p>
-					</a>
-					<p>Technologies used:</p>
-					<div class="tech-icons">
-						<div class="tech-icon">
-							<a href="https://www.python.org/">
-							<img src="../static/images/python-icon.png"
-							alt="Python Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://cloud.google.com/appengine/">
-							<img src="../static/images/google-app-engine-icon.png"
-							alt="Google App Engine Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://cloud.google.com/appengine/docs/python/ndb/">
-							<img src="../static/images/google-ndb-icon.png"
-							alt="Google NDB/Datastore Icon">
-							</a>
-						</div>
+						<h4 class="right">View project</h4>
 					</div>
-				</section>
-				<section class="fade">
-					<h3>Portfolio website</h3>
-					<p>The website you see now, built to host and
-					showcase my various projects in fully-functional
-					form, as well as to provide points of contact and
-					access to the code that drives each proejct.</p>
-					<p>Technologies used:</p>
-					<div class="tech-icons">
-						<div class="tech-icon">
-							<a href="https://www.python.org/">
-							<img src="../static/images/python-icon.png"
-							alt="Python Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="http://flask.pocoo.org/">
-							<img src="../static/images/flask-icon.png"
-							alt="Flask Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.javascript.com/">
-							<img src="../static/images/js-icon.png"
-							alt="Javascript Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://jquery.com/">
-							<img src="../static/images/jquery-icon.png"
-							alt="jQuery Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.linux.com/what-is-linux">
-							<img src="../static/images/linux-icon.png"
-							alt="Linux icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://httpd.apache.org/">
-							<img src="../static/images/apache-icon.png"
-							 alt="Apache icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/TR/html5/">
-							<img src="../static/images/html-icon.png"
-							alt="HTML Icon">
-							</a>
-						</div>
-						<div class="tech-icon">
-							<a href="https://www.w3.org/Style/CSS/Overview.en.html">
-							<img src="../static/images/CSS3-icon.png"
-							alt="CSS Icon">
-							</a>
-						</div>
+				</a>
+				<p>This project required the construction of a
+				back-end API to enable functionality for
+				a pre-built front-end.  The app allows users
+				to register, log in, manage, and interact with
+				other users' conferences.</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.python.org/">
+						<img src="../static/images/python-icon.png"
+						alt="Python Icon">
+						</a>
 					</div>
-				</section>
-			</div>
+					<div class="tech-icon">
+						<a href="https://cloud.google.com/appengine/">
+						<img src="../static/images/google-app-engine-icon.png"
+						alt="Google App Engine Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://cloud.google.com/appengine/docs/python/ndb/">
+						<img src="../static/images/google-ndb-icon.png"
+						alt="Google NDB/Datastore Icon">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="project shaded fade">
+				<h3>Portfolio website</h3>
+				<p>The website you see now, built to host and
+				showcase my various projects in fully-functional
+				form, as well as to provide points of contact and
+				access to the code, on GitHub, that drives each project.</p>
+				<p class="monospace">Technologies used:</p>
+				<div class="tech-icons">
+					<div class="tech-icon">
+						<a href="https://www.python.org/">
+						<img src="../static/images/python-icon.png"
+						alt="Python Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="http://flask.pocoo.org/">
+						<img src="../static/images/flask-icon.png"
+						alt="Flask Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.javascript.com/">
+						<img src="../static/images/js-icon.png"
+						alt="Javascript Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://jquery.com/">
+						<img src="../static/images/jquery-icon.png"
+						alt="jQuery Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.linux.com/what-is-linux">
+						<img src="../static/images/linux-icon.png"
+						alt="Linux icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://httpd.apache.org/">
+						<img src="../static/images/apache-icon.png"
+						 alt="Apache icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/TR/html5/">
+						<img src="../static/images/html-icon.png"
+						alt="HTML Icon">
+						</a>
+					</div>
+					<div class="tech-icon">
+						<a href="https://www.w3.org/Style/CSS/Overview.en.html">
+						<img src="../static/images/CSS3-icon.png"
+						alt="CSS Icon">
+						</a>
+					</div>
+				</div>
+			</section>
+
 		</div>
+		<div class="shaded fade" id="bio">
+			<div id="bio-pic">
+				<img src="../static/images/headshot-round-bw.png"
+				alt="My picture">
+			</div>
+			<p id="bio-text">As long as I can remember, I have had an interest in puzzles and problems.  I love the feelings of accomplishment and satisfaction that come from solving them.  My interest in programming began when I realized that it was not only a puzzle itself, to be figured out initially, but could then become a tool for solving other problems.  What's more, the scope of problems which can be solved through programming means not only that I will always have a new problem to turn to each time I complete one, but also that the level of challenge offered by the next one can always be greater than the last.
+			<br><br>
+			The satisfaction I feel when deploying a finished program for my own projects can become job satisfaction when I, as a part of a team, create and deliver a product to a client.  Also, the opportunities to learn, grow, and tackle ever-more ambitious projects are greater in the professional world.  It seems only natural, then, that I should pursue programming as a career.  </p>
+		</div>
+		<footer class="flex">
+			<div id="footer-content" class="shaded fade">
+				<p class="monospace" id="show-bio">Bio</p>
+				<p class="monospace" id="go-to-top">Back to top</p>
+				<p class="monospace">&#169; Eric Linden 2017</p>
+			</div>
+		</footer>
 	</div>
 	<script src="../static/lib/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../static/script.js"></script>
