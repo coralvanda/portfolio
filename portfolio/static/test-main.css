@@ -159,7 +159,7 @@ footer {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 339px) {
+@media only screen and (max-width: 362px) {
 	#header-content {
 		height: 100px;
 	}
