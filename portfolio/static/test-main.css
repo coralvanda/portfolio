@@ -117,6 +117,10 @@ footer {
 	border-radius: 200px;
 }
 
+#name {
+	margin: 0 0 0 0;
+}
+
 #icons {
 	margin-left: auto;
 	display: flex;
@@ -180,7 +184,6 @@ footer {
 	}
 
 	#name {
-		margin-top: 10px;
 		align-self: center;
 	}
 
@@ -204,7 +207,7 @@ footer {
 	}
 
 	#name {
-		margin: 10px 5px 10px 0;
+		margin: 0 5px 0 0;
 	}
 
 	#spacer {
@@ -231,7 +234,6 @@ footer {
 
 	#name {
 		font-size: 2em;
-		margin: 10px 0 10px 0;
 	}
 
 	#spacer {
