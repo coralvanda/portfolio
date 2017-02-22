@@ -1,202 +1,12 @@
-@media only screen and (max-width: 400px) {
-	html {
-		background-color: white;
-		background: url("../static/images/dock-mini-cropped.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-	    -moz-background-size: cover;
-        -o-background-size: cover;
-		background-size: cover;
-	}
-
-	.project-box {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.spacer {
-		height: 300px;
-		width: 100%;
-		display: flex;
-	}
-
-	#container {
-		min-width: 100%;
-	}
-
-	header {
-		width: 100%;
-	}
-
-	.center {
-		min-width: 100%;
-	}
-
-	section {
-		min-width: 100%;
-	}
-
-	#name {
-		font-size: 1.5em;
-		align-self: center;
-	}
-}
-
-@media only screen and (min-width: 401px) and (max-width: 600px) {
-	html {
-		background-color: white;
-		background: url("../static/images/dock-small-cropped.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-	    -moz-background-size: cover;
-        -o-background-size: cover;
-		background-size: cover;
-	}
-
-	.project-box {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.spacer {
-		height: 300px;
-		width: 100%;
-		display: flex;
-	}
-
-	#container {
-		min-width: 400px;
-	}
-
-	header {
-		min-width: 350px;
-	}
-
-	.center {
-		min-width: 350px;
-	}
-
-	section {
-		min-width: 280px;
-	}
-
-	#name {
-		font-size: 2em;
-		margin: 10px 5px 10px 5px;
-	}
-}
-
-@media only screen and (min-width: 601px) {
-	html {
-		background: url("../static/images/dock-large-cropped.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-		background-size: cover;
-	}
-
-	.project-box {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	.spacer {
-		height: 500px;
-		width: 100%;
-		display: flex;
-	}
-
-	#container {
-		min-width: 400px;
-	}
-
-	header {
-		min-width: 350px;
-	}
-
-	.center {
-		min-width: 350px;
-	}
-
-	section {
-		min-width: 280px;
-	}
-
-	#name {
-		font-size: 2em;
-		margin: 10px 5px 10px 5px;
-	}
-}
-
-#container {
-	max-width: 900px;
-	margin: auto;
-}
-
 header {
 	width: 100%;
-	height: 50px;
-	background: rgba(0, 0, 0, 0.7);
-	display: flex;
-	opacity: 0;
-	animation: fadein 3s 0s 1;
-	animation-fill-mode: forwards;
-}
-
-#headshot {
-	width: 50px;
-	height: 50px;
-	border-radius: 200px;
+	justify-content: center;
 }
 
 img {
 	max-width: 100%;
 	max-height: 100%;
 	background: rgba(0, 0, 0, 0);
-}
-
-#icons {
-	margin-left: auto;
-	display: flex;
-}
-
-.icon-link {
-	margin: 10px 5px 10px 5px;
-}
-
-.center {
-	margin: auto;
-	text-align: center;
-}
-
-#projects {
-	margin: auto;
-}
-
-section {
-	background: rgba(0, 0, 0, 0.7);
-	color: white;
-	max-width: 600px;
-	margin: 1px 1px 1px 1px;
-	padding: 0 10px 0 10px;
-	opacity: 0;
-}
-
-.white {
-	color: white;
-}
-
-@keyframes fadein {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-
-.fade {
-	animation: fadein 1.5s 0s 1;
-	animation-fill-mode: forwards;
 }
 
 a {
@@ -212,11 +22,226 @@ a:visited {
 	text-decoration: none;
 }
 
+h1 {
+	margin: 0 0 0 0;
+}
+
+h1, h3, h4 {
+	font-family: 'Playfair Display', serif, "Times New Roman", Times, serif;
+}
+
+p {
+    font-family: 'Crimson Text', serif, Georgia, serif;
+}
+
+.monospace {
+	font-family: 'Inconsolata', monospace, "Courier New", Courier, monospace;
+}
+
+footer {
+	width: 100%;
+	justify-content: center;
+}
+
+.icon-link {
+	margin: 10px 5px 10px 5px;
+}
+
+.right {
+	margin-left: auto;
+}
+
+.col-100 {
+	width: 100%;
+}
+
+.flex {
+	display: flex;
+}
+
+.project {
+	width: 100%;
+}
+
+.shaded {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	margin: 1px auto 1px auto;
+	padding: 0 10px 0 10px;
+	opacity: 0;
+}
+
+.white {
+	color: white;
+}
+
+.fade {
+	animation: fadein 1.5s 0s 1;
+	animation-fill-mode: forwards;
+}
+
 .tech-icons {
 	display: flex;
-	height: 50px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .tech-icon {
-	margin: 0 1px 0 1px;
+	margin: 0 1px 3px 1px;
+	height: 50px;
+	width: 50px;
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+#container {
+	max-width: 800px;
+	margin: auto;
+}
+
+#header-content {
+	width: 650px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: space-around;
+	opacity: 0;
+}
+
+#headshot {
+	width: 50px;
+	height: 50px;
+	border-radius: 200px;
+}
+
+#name {
+	margin: 0 0 0 0;
+}
+
+#icons {
+	margin-left: auto;
+	display: flex;
+}
+
+#project-bio-box {
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+}
+
+#projects {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#bio-pic {
+	float: left;
+	max-width: 150px;
+	max-height: 100%;
+	margin: 3px 5px 3px 0;
+}
+
+#bio-text {
+	padding: 5px 0 5px 0;
+	margin: 0 0 0 0;
+}
+
+#footer-content {
+	width: 650px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: space-around;
+	opacity: 0;
+}
+
+#show-bio, #go-to-top, #show-bio-button, #show-projects-button {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 362px) {
+	#header-content {
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	html {
+		background-color: white;
+		background: url("../static/images/dock-mini-cropped.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;
+	}
+
+	#container {
+		min-width: 100%;
+	}
+
+	#name {
+		align-self: center;
+	}
+
+	#spacer {
+		height: 400px;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+	html {
+		background-color: white;
+		background: url("../static/images/dock-small-cropped.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;
+	}
+
+	#container {
+		min-width: 400px;
+	}
+
+	#name {
+		margin: 0 5px 0 0;
+	}
+
+	#spacer {
+		height: 450px;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	html {
+		background: url("../static/images/dock-large-cropped.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;
+	}
+
+	.project {
+		width: 650px;
+	}
+
+	#container {
+		min-width: 400px;
+	}
+
+	#name {
+		font-size: 2em;
+	}
+
+	#spacer {
+		height: 600px;
+	}
+
+	#bio-pic {
+		min-width: 150px;
+		min-height: 150px;
+	}
 }
