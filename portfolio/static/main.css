@@ -163,6 +163,14 @@ footer {
 	cursor: pointer;
 }
 
+#show-bio:hover, #go-to-top:hover {
+	text-decoration: underline;
+}
+
+#show-bio-button:hover, #show-projects-button:hover {
+	text-decoration: underline;
+}
+
 @media only screen and (max-width: 362px) {
 	#header-content {
 		height: 100px;
