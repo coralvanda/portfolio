@@ -19,12 +19,19 @@ var init = function() {
 	getWinSize();
 	initEvents();
 	controlFade();
-	$('#bio').hide();
+	setSpacerHeight();
+	$bio.hide();
+	$projects.hide();
 };
 
 var getWinSize = function() {
 	// stores the height of the window
 	winSize.height = $win.height();
+};
+
+var setSpacerHeight = function() {
+	$spacer.height(winSize.height -
+		($headerContent.height() + $('#project-bio-box').height()));
 };
 
 var initEvents = function() {
@@ -33,6 +40,7 @@ var initEvents = function() {
 		// resets window height value based on the resize event
 		getWinSize();
 		controlFade();
+		setSpacerHeight();
 	}),
 	$(window).scroll(function( event ) {
 		// adjust visibility after a scroll event
@@ -92,6 +100,7 @@ var showOrHideBio = function() {
 var showProjects = function() {
 	// scrolls down to projects, or hides the bio and returns to projects
 	if (bioHidden === true) {
+		$projects.show();
 		$('html, body').animate({scrollTop: $projects.offset().top});
 	}
 	else {
@@ -99,11 +108,11 @@ var showProjects = function() {
 	}
 };
 
-$('#show-bio').click(function () {
+$bioText.click(function () {
 	showOrHideBio();
 });
 
-$('#show-bio-button').click(function() {
+$showBioButton.click(function() {
 	showOrHideBio();
 });
 
