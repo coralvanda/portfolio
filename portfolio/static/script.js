@@ -21,7 +21,6 @@ var init = function() {
 	controlFade();
 	setSpacerHeight();
 	$bio.hide();
-	$projects.hide();
 };
 
 var getWinSize = function() {
